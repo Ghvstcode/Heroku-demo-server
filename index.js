@@ -8,7 +8,7 @@ require('dotenv').config()
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
- res.send(`Hello World, ${process.env.PORT}`).status(200)
+ res.send(`Hello World, ${process.env.NAME}`).status(200)
 });
 
 app.listen(process.env.PORT, () => console.log(`App is running on port ${process.env.PORT||3000}`));
